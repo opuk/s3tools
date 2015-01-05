@@ -12,5 +12,5 @@
 DEST=s3+http://$BUCKET/$HOSTNAME
 
 #--verbosity 9 \
-duplicity remove-all-but-n-full 1 --force ${DEST}
+duplicity remove-all-but-n-full 1 --s3-european-buckets --s3-use-new-style --force ${DEST}
 
