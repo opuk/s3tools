@@ -10,8 +10,8 @@ files=0
 buckets = conn.get_all_buckets()
 
 for i in buckets:
+  print i.name
   for j in conn.get_bucket(i):
-    #print j.name + ': ' + str(j.size/1024/1024) +'mb.'
     size+=j.size
     files+=1
 
